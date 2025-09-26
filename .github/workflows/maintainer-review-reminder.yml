@@ -1,0 +1,15 @@
+name: Maintainer review reminder
+
+on:
+  schedule:
+    - cron: '00 01 1 1 *'
+  workflow_dispatch:  # For testing
+
+permissions: {}
+
+jobs:
+  repository-permissions-review:
+    uses: otterdog-kairoaraujo/otterdog-configs/.github/workflows/repository-permissions-review.yml@main
+    with:
+      projectName: "tufie"
+      labels: '["maintenance", "security"]'
