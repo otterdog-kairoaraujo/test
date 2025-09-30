@@ -10,6 +10,6 @@ on:
 
 jobs:
   review-maintainer-permissions:
-    uses: .otterdog/workflows/.github/workflows/maintainer-permissions-review.yml@main
+    uses: otterdog-kairoaraujo/otterdog-configs/.github/workflows/repository-permissions-review.yml@main
     with:
       frequency_months: 12
