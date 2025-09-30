@@ -1,4 +1,4 @@
-name: Maintainer Permissions Review
+name: Project Permissions Review
 
 on:
   schedule:
@@ -11,5 +11,3 @@ on:
 jobs:
   review-maintainer-permissions:
     uses: otterdog-kairoaraujo/otterdog-configs/.github/workflows/project-permissions-review.yml@main
-    with:
-      frequency_months: 12
